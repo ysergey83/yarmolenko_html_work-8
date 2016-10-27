@@ -3,16 +3,16 @@ html, body {
 }
 
 .wrapper {
-  width: 960px;
-  height: 100%;
-  margin: auto;
+  background-image: url("../images/bg/bg_mount.png");
+  background-repeat: no-repeat;
+  background-position: 52% 0;
+  max-width: 1920px;
+  overflow: hidden;
 }
 
 .header {
-  background-image: url("../images/bg/bg_mount.png");
   text-align: center;
-  background-position: 50% 0;
-  height: 780px;
+  height: 806px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -20,6 +20,8 @@ html, body {
 .header__wrapper {
   position: relative;
   height: 140px;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .header__logo {
@@ -65,12 +67,16 @@ html, body {
 }
 
 .slider {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 49px;
   position: relative;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.slider__wrapper {
+  width: 960px;
+  margin: 0 auto;
+
 }
 
 .slider__text {
@@ -111,6 +117,11 @@ html, body {
   overflow: hidden;
   height: 303px;
   padding: 40px 20px 0 50px;
+}
+
+.first__wrapper {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .first__about {
@@ -179,6 +190,11 @@ p.clip {
   margin: 0 auto;
 }
 
+.blog__wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .blog__post {
   float: left;
   width: 34%;
@@ -226,6 +242,11 @@ p.clip {
   height: 120px;
 }
 
+.logo__wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .logos__logo {
    float: left;
    padding-left: 40px;
@@ -239,6 +260,11 @@ p.clip {
   width: 100%;
   margin-right: 60px;
   padding-top: 50px;
+}
+
+.coments__wrapper {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .comments__h2 {
@@ -258,6 +284,12 @@ footer {
   height: 110px;
   width: 100%;
 }
+
+.footer__wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
 
 .footer__menu {
   width: 80%;
@@ -300,6 +332,7 @@ footer {
   color: #fff;
 }
 
+
 @media (max-width: 768px) {
   
 body {
@@ -307,6 +340,12 @@ body {
 }
 
 .wrapper {
+  background-position: 45% 0;
+}
+
+.header__wrapper {
+  position: relative;
+  height: 140px;
   width: 768px;
   margin: 0 auto;
 }
@@ -333,13 +372,17 @@ body {
 
 .slider__phone {
   float: left;
-  margin-left: 50px;
+  margin-left: -19px;
+}
+
+.first {
+   padding: 40px 20px 0 30px;
 }
 
 .first__about {
   position: relative;
   float: left;
-  max-width: 28%;
+  max-width: 22%;
   height: 205px;
   margin-right: 20px;
   font-size: 14px;
@@ -363,11 +406,11 @@ body {
 
 .logos__logo {
    float: left;
-   padding-left: 20px;
+   padding-left: 15px;
 }
 
 .comments__col {
-  width: 28%;
+  width: 23%;
   float: left;
   margin-right: 30px;
   padding-top: 50px;
@@ -376,7 +419,6 @@ body {
 footer {
   background-image: url("../images/bg/bg_footer.png");
   background-repeat: no-repeat;
-  
   height: 110px;
 }
 
@@ -399,6 +441,12 @@ body {
 }
 
 .wrapper {
+  background-position: 45% 0;
+}
+
+.header__wrapper {
+  position: relative;
+  height: 140px;
   width: 480px;
   margin: 0 auto;
 }
@@ -451,10 +499,14 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.slider__wrapper {
+  padding-left: 5px;
+  
+}
 .slider__text {
   float: left;
   max-width: 66%;
-  margin-top: 47px;
+  margin-top: 116px;
   text-align: left;
   line-height: 20px
 }
@@ -471,7 +523,7 @@ body {
 }
 
 .slider__h3 {
-  font-size: 24px;
+  font-size: 20px;
   color: #edbfff;
   margin: 0;
   line-height: 0px;
@@ -493,10 +545,16 @@ body {
 .first__about {
   position: relative;
   float: left;
-  max-width: 72%;
+  max-width: 100%;
   height: 146px;
   margin-right: 20px;
   font-size: 14px;
+}
+
+.first__about--content {
+  float: left;
+  color: #fff;
+  width: 38%;
 }
 
 p.clip {
@@ -539,7 +597,8 @@ p.clip {
 }
 
 .blog__p {
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
+  width: 60%; 
 }
 
 .logos {
@@ -548,19 +607,33 @@ p.clip {
   height: 219px;
 }
 
+.logo__wrapper {
+  width: 480px;
+  margin: 0 auto;
+}
+
 .logos__logo {
    float: left;
    padding-left: 20px;
+   width: 25%;
 }
 
 .comments {
   height: 610px;
+}
+
+.comments__wrapper {
+  width: 480px;
+  margin: 0 auto;
 }
 .comments__col {
   width: 70%;
   float: left;
   margin-left: 30px;
   padding-top: 20px;
+}
+.comments__p {
+  width: 59%;
 }
 
 footer {
@@ -605,7 +678,7 @@ body {
 .menu__menu {
   position: absolute;
   top: 64px;
-  margin-left: 83px;
+  margin-left: 61px;
   background: none;
 }
 
@@ -658,13 +731,13 @@ body {
 }
 
 .slider__h1 {
-  font-size: 53px;
+  font-size: 52px;
   color: #fff;
   line-height: 0px;
 }
 
 .slider__h3 {
-  font-size: 21px;
+  font-size: 20px;
   color: #edbfff;
   margin: 0;
   line-height: 0px;
@@ -682,7 +755,7 @@ body {
   background-repeat: repeat-x;
   overflow: hidden;
   height: 503px;
-  padding: 40px 0 0 70px;
+  padding: 40px 0 0 60px;
 }
 
 .first__about {
@@ -692,6 +765,12 @@ body {
   height: 146px;
   margin-right: 20px;
   font-size: 14px;
+}
+
+.first__about--content {
+  float: left;
+  color: #fff;
+  width: 28%;
 }
 
 p.clip {
@@ -707,15 +786,20 @@ p.clip {
   position: relative;
   background-color: #f9f9f9;
   padding-top: 20px;
-  padding-bottom: 110px;
+  padding-bottom: 1px;
   overflow: hidden;
   height:526px;
 }
 
+.blog__wrapper {
+  width: 320px;
+
+}
+
 .blog__post {
   float: left;
-  width: 63%;
-  margin-left: 39px;
+  width: 85%;
+  margin-left: 32px;
   padding-left: 49px;
   background-image: url("../images/bg/bg_post.png");
   position: relative;
@@ -732,11 +816,14 @@ p.clip {
 .blog__updates {
   float: left;
   width: 65%;
-  padding-left: 12px;
   position: relative;
   line-height: 15px;
-  margin-left: 34px;
+  margin-left: 1px;
   margin-top: 30px;
+}
+
+.blog__item {
+  width: 130%;
 }
 
 .blog__h2 {
@@ -749,7 +836,7 @@ p.clip {
 }
 
 .blog__p-resent {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   overflow: hidden;
 }
@@ -761,12 +848,13 @@ p.clip {
 }
 
 .logos__logo {
-   float: left;
+  float: left;
+  width: 30%;
+    padding-left: 17px;
 }
 
 .comments {
-  position: absolute;
-  left: 4000px;
+  display: none;
   height: 733px;
   padding-top: 0;
 }
@@ -785,8 +873,7 @@ footer {
 }
 
 .footer__menu {
-  position: absolute;
-  left: 4000px;
+  display: none;
   width: 100%;
   float: left;
 }
